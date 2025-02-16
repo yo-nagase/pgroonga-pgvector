@@ -10,6 +10,8 @@ https://github.com/yo-nagase/pgroonga-pgvector/pkgs/container/pgroonga-pgvector
 - pgroonga and pgvector are installed.
 - This image can be used both arm64 and amd64.
 - Extension is installed in the initialization script.
+- Can be spin up docker or docker compose.
+
 
 
 
