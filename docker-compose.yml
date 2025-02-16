@@ -1,15 +1,16 @@
 version: '3.8'
 services:
   db:
-    build: .
+    # build: .
+    image: ghcr.io/yo-nagase/pgroonga-pgvector:latest
     environment:
-      POSTGRES_DB: mydatabase
+      POSTGRES_DB: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: your_password
     ports:
       - "15432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_vector_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  postgres_vector_data:
