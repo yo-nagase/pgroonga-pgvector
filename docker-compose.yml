@@ -3,7 +3,7 @@ services:
   db:
     build: .
     environment:
-      POSTGRES_DB: pgvector_example
+      POSTGRES_DB: mydatabase
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: your_password
     ports:

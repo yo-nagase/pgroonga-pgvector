@@ -18,4 +18,7 @@ RUN apt-get update && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
+# Copy initialization script
+COPY init.sql /docker-entrypoint-initdb.d/
+
 EXPOSE 5432
