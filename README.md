@@ -6,6 +6,19 @@ This repository is a docker image that has pgroonga and pgvector installed.
 You can pull the docker image from the following link.
 https://github.com/yo-nagase/pgroonga-pgvector/pkgs/container/pgroonga-pgvector
 
+## Characteristics
+- pgroonga and pgvector are installed.
+- This image can be used both arm64 and amd64.
+- Extension is installed in the initialization script.
+
+
+
+You don't need to execute the following command because the docker image has already installed pgroonga and pgvector.
+
+```sql
+CREATE EXTENSION IF NOT EXISTS vector;
+CREATE EXTENSION IF NOT EXISTS pgroonga;
+```
 
 ## version
 - postgres: 15.1
